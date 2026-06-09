@@ -407,6 +407,172 @@
     <wire from="(630,360)" to="(650,360)"/>
     <wire from="(630,460)" to="(660,460)"/>
   </circuit>
+  <circuit name="Memorias_IR_Murilo">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="Memorias_IR_Murilo"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(80,130)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="PC_Address"/>
+      <a name="width" val="5"/>
+    </comp>
+    <comp lib="0" loc="(80,220)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="Clock"/>
+    </comp>
+    <comp lib="0" loc="(80,240)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="Reset"/>
+    </comp>
+    <comp lib="0" loc="(80,430)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="Data_Address"/>
+      <a name="width" val="5"/>
+    </comp>
+    <comp lib="0" loc="(80,470)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="MemWrite"/>
+    </comp>
+    <comp lib="0" loc="(80,510)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="Data_Write"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="0" loc="(700,510)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Data_Read"/>
+      <a name="type" val="output"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="0" loc="(900,130)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Opcode"/>
+      <a name="type" val="output"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(900,170)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="RD_RS2"/>
+      <a name="type" val="output"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(900,210)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="RS1"/>
+      <a name="type" val="output"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(900,250)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="RS2"/>
+      <a name="type" val="output"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(900,290)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Immediate"/>
+      <a name="type" val="output"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(900,330)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Instruction_IR"/>
+      <a name="type" val="output"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="0" loc="(470,200)" name="Power"/>
+    <comp lib="0" loc="(250,480)" name="Power"/>
+    <comp lib="0" loc="(700,300)" name="Splitter">
+      <a name="bit0" val="4"/>
+      <a name="bit1" val="4"/>
+      <a name="bit10" val="2"/>
+      <a name="bit11" val="2"/>
+      <a name="bit12" val="1"/>
+      <a name="bit13" val="1"/>
+      <a name="bit14" val="0"/>
+      <a name="bit15" val="0"/>
+      <a name="bit2" val="4"/>
+      <a name="bit3" val="4"/>
+      <a name="bit5" val="4"/>
+      <a name="bit6" val="4"/>
+      <a name="bit7" val="4"/>
+      <a name="bit8" val="3"/>
+      <a name="bit9" val="3"/>
+      <a name="fanout" val="5"/>
+      <a name="incoming" val="16"/>
+      <a name="spacing" val="4"/>
+    </comp>
+    <comp lib="5" loc="(200,120)" name="ROM">
+      <a name="addrWidth" val="5"/>
+      <a name="appearance" val="classic"/>
+      <a name="contents">addr/data: 5 16
+100a 200b b600 700c</a>
+      <a name="dataWidth" val="16"/>
+      <a name="label" val="Instruction_Memory"/>
+      <a name="labelvisible" val="true"/>
+    </comp>
+    <comp lib="5" loc="(500,150)" name="Register">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="IR"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="5" loc="(300,420)" name="RAM">
+      <a name="addrWidth" val="5"/>
+      <a name="appearance" val="classic"/>
+      <a name="asyncread" val="true"/>
+      <a name="dataWidth" val="16"/>
+      <a name="databus" val="bibus"/>
+      <a name="label" val="Data_Memory"/>
+      <a name="labelvisible" val="true"/>
+      <a name="type" val="nonvolatile"/>
+    </comp>
+    <comp lib="9" loc="(200,80)" name="Text">
+      <a name="text" val="MEMORIA DE INSTRUCOES 32 x 16"/>
+    </comp>
+    <comp lib="9" loc="(300,380)" name="Text">
+      <a name="text" val="MEMORIA DE DADOS 32 x 16"/>
+    </comp>
+    <comp lib="9" loc="(570,80)" name="Text">
+      <a name="text" val="IR E DECODIFICACAO DOS CAMPOS"/>
+    </comp>
+    <comp lib="9" loc="(300,600)" name="Text">
+      <a name="text" val="Teste: inicializar Mem[10] = 7 e Mem[11] = 5"/>
+    </comp>
+    <comp lib="9" loc="(200,270)" name="Text">
+      <a name="text" val="ROM: 100A 200B B600 700C"/>
+    </comp>
+    <wire from="(80,130)" to="(200,130)"/>
+    <wire from="(80,220)" to="(120,220)"/>
+    <wire from="(120,220)" to="(120,490)"/>
+    <wire from="(120,220)" to="(500,220)"/>
+    <wire from="(120,490)" to="(300,490)"/>
+    <wire from="(80,240)" to="(530,240)"/>
+    <wire from="(80,430)" to="(300,430)"/>
+    <wire from="(80,470)" to="(300,470)"/>
+    <wire from="(80,510)" to="(300,510)"/>
+    <wire from="(250,480)" to="(300,480)"/>
+    <wire from="(440,180)" to="(500,180)"/>
+    <wire from="(470,200)" to="(500,200)"/>
+    <wire from="(560,180)" to="(620,180)"/>
+    <wire from="(620,180)" to="(620,300)"/>
+    <wire from="(620,300)" to="(700,300)"/>
+    <wire from="(620,180)" to="(620,330)"/>
+    <wire from="(620,330)" to="(900,330)"/>
+    <wire from="(540,510)" to="(700,510)"/>
+    <wire from="(720,130)" to="(900,130)"/>
+    <wire from="(720,170)" to="(900,170)"/>
+    <wire from="(720,210)" to="(900,210)"/>
+    <wire from="(720,250)" to="(900,250)"/>
+    <wire from="(720,290)" to="(900,290)"/>
+  </circuit>
   <circuit name="clock_marcelo">
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="clock_marcelo"/>
