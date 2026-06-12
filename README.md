@@ -6,7 +6,11 @@ Implementação de uma CPU simples inspirada na arquitetura RISC-V (modelo *load
 
 ## Integrantes
 
-> _Adicionar nomes do grupo aqui_
+Pietro Branco Rossi
+Felipe Ballarin
+Marcelo Silva
+Murilo
+André Barros
 
 ---
 
