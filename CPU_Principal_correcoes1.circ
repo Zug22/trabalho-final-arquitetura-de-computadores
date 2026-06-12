@@ -469,9 +469,6 @@
     <a name="circuit" val="Memorias_IR_Murilo"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(190,330)" name="Clock">
-      <a name="appearance" val="NewPins"/>
-    </comp>
     <comp lib="0" loc="(260,450)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="Data_Address"/>
@@ -488,6 +485,7 @@
     </comp>
     <comp lib="0" loc="(260,590)" name="Pin">
       <a name="appearance" val="classic"/>
+      <a name="label" val="CLock"/>
     </comp>
     <comp lib="0" loc="(430,480)" name="Power"/>
     <comp lib="0" loc="(880,530)" name="Pin">
