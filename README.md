@@ -104,7 +104,7 @@ Após 4 ciclos de clock:
 
 ### Pré-requisitos
 
-- [Logisim Evolution v4.0](https://github.com/logisim-evolution/logisim-evolution/releases)
+- [Logisim Evolution v4.1](https://github.com/logisim-evolution/logisim-evolution/releases)
 - Java 11 ou superior
 
 ### Passos
